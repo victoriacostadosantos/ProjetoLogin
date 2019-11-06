@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+ <script >
+function funcao1() {
+        var nome = document.form.usr.value;
+		var senha = document.form.pword.value;
+        var username = "mytrainer"; 
+        var password = "exemplo";
+		if((nome==username) && (senha==password)){
+		alert ("Acesso permitido!");
+		}
+        else {
+            alert ("Login ou senha incorretos tente novamente...");
+       }
+	    }
+</script>
+</head>
+<body>
+
+<form name="form">
+<center>
+<label>Login</label>
+<input type="text" name="usr" placeholder="username"> 
+<label>Senha</label>
+<input type="password" name="pword" placeholder="password">
+<input type="submit" onClick="funcao1()" value="OK" /></center>
+
+</form>
+</body>
+</html>
